@@ -39,6 +39,27 @@ API_KEY=xxxx node dist/server.js
 ```
 
 
+Sample Api Endpoint: 
+
+**http://127.0.0.1:3000/gamedata?summoner=jehuni&region=euw1**
+
+
+# Container Usage
+
+Build :
+```console
+docker build -t lol-api .
+```
+
+Runnig :
+```console
+docker run -it -p 3000:3000 lol-api
+```
+
+Sample Api Endpoint: 
+
+**http://127.0.0.1:3000/gamedata?summoner=jehuni&region=euw1**
+
 # Test
 
 To run tests :
