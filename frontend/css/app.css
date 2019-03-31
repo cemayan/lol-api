@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+
+div#bar {
+
+
+background: #121212;
+
+}
+
+img#logo {
+
+
+
+  background: url(../images/icon-game-lol.png);
+
+} 
+
+
+body {
+
+
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #fff;
+  background-attachment: fixed;
+  font-family: Lato;
+  background-size: cover;
+  background-image: url(../images/background.png);
+
+} 
+
+header {
+  height: 35px;
+	background: #121212;
+}
+
+header img {
+  display: block;
+	padding: 10px;
+}
+
+.main {
+  padding: 40px 20px;
+}
+
+span.scores__name {
+	width: 32%;
+	display: inline-block;
+}
+.scores {
+	width: 55%;
+}
+
+span.scores__kda, span.scores__exp, span.scores__total  {
+	width: 13%;
+	display: inline-block;
+	text-align: center;
+}
+
+.team__name {
+  font-size: 18px;
+}
+.team__name--short {
+  color: #C8AA6E;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.game__status {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.game__status--victory {
+  color: #0296AA;
+}
+
+.game__status--defeat {
+  color: #BE1E37;
+}
+
+.venue {
+  font-weight: bold;
+  font-size: 38px;
+  margin-bottom: 30px;
+}
+
+.main__header {
+  margin-bottom: 15px;
+}
+
+.team {
+  margin-bottom:20px;
+  overflow: hidden;
+}
+
+
+@media screen and (max-width: 700px) {
+	.scores {
+		width: 100%;
+	}
+	span.scores__name , span.scores__kda, span.scores__exp, span.scores__total  {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+		width: 25%;
+		display: block;
+		float: left;
+  }
+  .venue {
+    font-size: 24px;
+  }
+  .main__header div {
+    float: left;
+    width: 50%;
+  }
+  .main__header div + div {
+    float: right;
+    text-align: right;
+  }
+  .team__name {
+    font-size: 14px;
+  }
+  .game__status {
+    font-size: 14px;
+  }
+}
+
+@media screen and  (max-width: 992px) and (min-width: 450px) {
+	.scores {
+		width: 80%;
+	}
+		span.scores__name , span.scores__kda, span.scores__exp, span.scores__total  {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+		width: 25%;
+		display: block;
+		float: left;
+	}
+}
+
+
+hr {
+  margin-bottom: 30px;
+  border: 1px solid #444747;
+} 
+
+.game1 {
+  font-size: 13px;
+  line-height: normal;
+  color: #F0E6D2;
+  margin-right: 10px
+}
+
+.game2 {
+  font-size: 13px;
+  line-height: normal;
+  
+  color: #C8AA6E;
+}
