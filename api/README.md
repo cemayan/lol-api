@@ -15,27 +15,19 @@ To install packages:
 npm install 
 ```
 
----
-You can run with predefined script :
-
-```console
-npm start 
-```
-
-or
-
-You can run default: 
-
-```console
-node dist/server.js 
-```
-
 > Important: 
 
-If the api key has expired,  you must provide api key as below:
+If the api key has expired or undefined ,  you must provide api key as below:
 
 ```console
 API_KEY=xxxx node dist/server.js 
+```
+or
+
+You can create the **.env** file  and type the following. (in api folder)
+
+```console
+API_KEY=xxxx
 ```
 
 
