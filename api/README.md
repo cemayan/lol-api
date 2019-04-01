@@ -38,6 +38,12 @@ Sample Api Endpoint:
 
 # Container Usage
 
+You can create the **.env** file  and type the following. (in api folder)
+
+```console
+API_KEY=xxxx
+```
+
 Build :
 ```console
 docker build -t lol-api .
