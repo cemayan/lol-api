@@ -208,14 +208,14 @@ hr {
   border: 1px solid #444747;
 } 
 
-.game1 {
+#game-1 {
   font-size: 13px;
   line-height: normal;
   color: #F0E6D2;
   margin-right: 10px
 }
 
-.game2 {
+#game-2 {
   font-size: 13px;
   line-height: normal;
   

@@ -8,7 +8,7 @@
   <link href='./css/app.css' rel='stylesheet' type='text/css'>
   <title>Document</title>
 </head>
-<body onload="loadGameData()">
+<body>
   <header>
     <img src="./images/icon-game-lol.png" alt="">
   </header>
@@ -18,56 +18,27 @@
   </div>
 
   <div class="games">
-      <span class="game1 selected" >GAME 1</span> 
+      <span id="game-1" class="game selected" >GAME 1</span> 
 
-      <span class="game2">GAME 2</span>
+      <span id="game-2" class="game">GAME 2</span>
   </div>
   <hr>
 
-  <div class="team">
+  <div class="team" id="team-1">
       <div class="main__header clearfix">
-          <div id="teamOneInfo"></div>
       </div>
-      <div id="teamOneParticipants"></div>
   </div>
 
-  <div class="team">
+  <div class="team" id="team-2">
 
       <div class="main__header clearfix">
-          <div id="teamTwoInfo"></div>
       </div>
-      <div id="teamTwoParticipants"></div>
   </div>
 </div>
 
-<script id="participantsTemplate" type="x-tmpl-mustache">
-
-
-    <ul class="scores">
-        {{#participants}}
-      <li class="scores__item">
-          <span class="scores__name" title="{{name}}">{{name}}</span>
-          <span class="scores__kda">{{stats}}</span>
-          <span class="scores__exp">{{pointsEarned}}</span>
-          <span class="scores__total">{{totalScore}}</span>
-      </li>
-      {{/participants}}
-    </ul> 
-
-
-</script>
 
 
 
-<script id="statusandnameTemplate" type="x-tmpl-mustache">
-    <div class="team__name"><span class="team__name--short">{{shortName}}</span>{{name}}</div>
-    {{#isWinner}}
-    <div class="game__status game__status--victory">WINNER</div>
-    {{/isWinner}}
-    {{^isWinner}}
-    <div class="game__status game__status--defeat">DEFEAT</div>
-    {{/isWinner}}
-</script>
 
 
 
